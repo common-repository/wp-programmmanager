@@ -1,0 +1,156 @@
+/* 
+    Document   : stylesheet
+    Created on : 02.11.2009, 13:38:30
+    Author     : Mantus
+    Description:
+        Stylesheet for the WP-PManager Plugin, specialy for the JScript Tab-Control
+*/
+
+/* Everything about Fonts */
+#pmanager-small-font
+{
+    font-weight:normal;
+    font-size:6pt;
+}
+
+.color
+{
+   border: 1px solid black;
+}
+
+.pmanager_toggle_button
+{
+    position:relative;
+    right:0px;
+    top:0px;
+    float:right;
+    display:block;
+    width:20px;
+    height:24px;
+    margin:0px 2px;
+}
+
+.pmanager_toggle_button:hover
+{
+    background:url(../collapse.png);
+}
+
+.tabContainer {
+  width:99%;
+  margin:auto;
+  padding-top:2px;
+  /*background:#181818;
+  border:1px solid #222;*/
+}
+
+/* Style for Usual tabs */
+.usual {
+  /*background-color:#181818;*/
+  color:#111;
+  /*padding:15px 20px;*/
+  width:90%;
+  /*border:1px solid #222;*/
+  margin:auto;
+}
+.usual li { list-style:none; float:left; }
+.usual ul a {
+  display:block;
+  padding:6px 10px;
+  text-decoration:none!important;
+  margin:1px;
+  margin-left:0;
+  font:10px Verdana;
+  color:#FFF;
+  background:#444;
+}
+.usual ul a:hover {
+  color:#FFF;
+  background:#111;
+  }
+.usual ul a.selected {
+  margin-bottom:0;
+  color:#FFF;
+  background:black;
+  border-bottom:1px solid black;
+  cursor:default;
+  }
+.usual div {
+  padding:10px 10px 8px 10px;
+  *padding-top:3px;
+  *margin-top:-15px;
+  clear:left;
+  background:snow;
+  font:10pt Georgia;
+}
+.usual div a { color:#000; font-weight:bold; }
+
+
+/* Contains the Sortable Columns Section */
+.groupWrapper
+{
+	width: 32%;
+	float: left;
+	margin-right: 1%;
+	min-height: 400px;
+        background:#fff;
+        border:1px solid #ddd;
+}
+
+.groupItem
+{
+        margin:5px;
+	margin-bottom: 20px;
+        border:1px solid #ddd;
+}
+.groupItem .itemHeader
+{
+	line-height: 28px;
+	/*background-color: #DAFF9F;*/
+	border-top: 2px solid white;
+        background:url(../images/bg.png) repeat-x;
+	color: #000;
+	padding: 0 10px;
+	cursor: move;
+	font-weight: bold;
+	font-size: 16px;
+	height: 28px;
+	position: relative;
+        cursor:move;
+}
+
+.groupItem .itemHeader a
+{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-weight: normal;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.groupItem .itemContent {
+    padding:3px;
+}
+
+.groupItem .itemContent h4
+{
+    padding:0;
+    margin:3px;
+}
+
+.sortHelper
+{
+	border: 1px dashed #ddd;
+	width: auto !important;
+}
+.groupWrapper p
+{
+	height: 1px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+label.small {
+    font-size:8pt;
+}
